@@ -8,7 +8,7 @@ import ForecastSlider from './components/ForecastSlider';
 import CheckpointDrawer from './components/CheckpointDrawer';
 import { AlertCircle, SlidersHorizontal, Map, ArrowRight, ChevronLeft, ChevronRight, Edit3 } from 'lucide-react';
 
-const API_BASE = '/api';
+const API_BASE = import.meta.env.VITE_API_BASE_URL || '/api';
 
 export default function App() {
   const [currentView, setCurrentView] = useState('home'); // 'home' or 'dashboard'
