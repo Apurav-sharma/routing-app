@@ -10,5 +10,6 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "backend.settings")
 
 from django.core.wsgi import get_wsgi_application
 
-# Vercel Serverless Python looks for an exported 'app' callable
+# Vercel Serverless Python looks for an exported 'app' or 'handler' callable
 app = get_wsgi_application()
+handler = app
